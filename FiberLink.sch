@@ -11145,20 +11145,20 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R30" library="rcl" deviceset="R-EU_" device="R0402"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="V2" library="diode" deviceset="DIODE-" device="SOD323-R"/>
-<part name="SJ2" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ3" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ4" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ5" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ6" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ7" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ8" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ9" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ10" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ11" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ12" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ13" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ14" library="OMAT_IC" deviceset="SJ" device=""/>
-<part name="SJ15" library="OMAT_IC" deviceset="SJ" device=""/>
+<part name="SJ2" library="OMAT_IC" deviceset="SJ" device="" value="2"/>
+<part name="SJ3" library="OMAT_IC" deviceset="SJ" device="" value="3"/>
+<part name="SJ4" library="OMAT_IC" deviceset="SJ" device="" value="4"/>
+<part name="SJ5" library="OMAT_IC" deviceset="SJ" device="" value="5"/>
+<part name="SJ6" library="OMAT_IC" deviceset="SJ" device="" value="6"/>
+<part name="SJ7" library="OMAT_IC" deviceset="SJ" device="" value="7"/>
+<part name="SJ8" library="OMAT_IC" deviceset="SJ" device="" value="8"/>
+<part name="SJ9" library="OMAT_IC" deviceset="SJ" device="" value="9"/>
+<part name="SJ10" library="OMAT_IC" deviceset="SJ" device="" value="10"/>
+<part name="SJ11" library="OMAT_IC" deviceset="SJ" device="" value="11"/>
+<part name="SJ12" library="OMAT_IC" deviceset="SJ" device="" value="12"/>
+<part name="SJ13" library="OMAT_IC" deviceset="SJ" device="" value="13"/>
+<part name="SJ14" library="OMAT_IC" deviceset="SJ" device="" value="14"/>
+<part name="SJ15" library="OMAT_IC" deviceset="SJ" device="" value="15"/>
 <part name="V1" library="OMAT_IC" deviceset="IFD91" device=""/>
 <part name="H1" library="OMAT_IC" deviceset="IFE91A" device=""/>
 <part name="L2" library="rcl" deviceset="R-EU_" device="R0402"/>
@@ -11186,11 +11186,44 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C20" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="P+16" library="supply1" deviceset="+5V" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="SJ17" library="OMAT_IC" deviceset="SJ-TRI" device=""/>
+<part name="SJ17" library="OMAT_IC" deviceset="SJ-TRI" device="" value="17"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="144.78" y="-5.08" size="1.778" layer="91">SJ2 FIBER RX TO RS232
+SJ3 FIBER RX TO USB
+SJ4 RS232 RX TO FIBER
+SJ5 USB RX TO FIBER
+SJ6 USB RX TO RS232
+SJ7 RS232 RX TO USB
+SJ8 RS485 RX TO FIBER
+SJ9 FIBER RX TO RS485
+SJ10 RS485 RX TO USB
+SJ11 USB RX TO RS485
+SJ12 RS232 RX TO RS485
+SJ13 RS485 RX TO RS232
+SJ14 CARRIER SENSE TO RX485 TXEN
+SJ15 USB TXEN TO RS485 TXEN
+
+SJ17 FTDI POWER SELECT</text>
+<text x="200.66" y="-10.16" size="1.778" layer="91">USB &lt;-&gt; RS232
+SJ6, SJ7
+
+USB &lt;-&gt; RS485
+SJ10, SJ11, SJ15
+
+USB &lt;-&gt; FIBER
+SJ3, SJ5
+
+RS232 &lt;-&gt; RS485
+SJ12, SJ13, SJ14
+
+RS232 &lt;-&gt; FIBER
+SJ2, SJ4
+
+FIBER &lt;-&gt; RS485
+SJ8, SJ9, SJ14</text>
 </plain>
 <instances>
 <instance part="N1" gate="A" x="175.26" y="106.68"/>
@@ -11245,7 +11278,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="116.459" y="-11.176" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R8" gate="G$1" x="157.48" y="111.76" rot="MR270"/>
-<instance part="R9" gate="G$1" x="165.1" y="96.52" rot="R270"/>
+<instance part="R9" gate="G$1" x="162.56" y="96.52" rot="R270"/>
 <instance part="X2" gate="G$1" x="398.78" y="50.8" rot="MR0"/>
 <instance part="GND8" gate="1" x="383.54" y="35.56" rot="MR0"/>
 <instance part="P+7" gate="1" x="375.92" y="63.5" rot="MR0"/>
@@ -11285,7 +11318,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="P+12" gate="1" x="378.46" y="152.4"/>
 <instance part="GND17" gate="1" x="378.46" y="91.44"/>
 <instance part="X3" gate="1" x="401.32" y="121.92" rot="R180"/>
-<instance part="R28" gate="G$1" x="165.1" y="124.46" rot="R270"/>
+<instance part="R28" gate="G$1" x="162.56" y="124.46" rot="R270"/>
 <instance part="R29" gate="G$1" x="157.48" y="88.9" rot="MR270"/>
 <instance part="C16" gate="G$1" x="208.28" y="99.06" rot="R180"/>
 <instance part="R30" gate="G$1" x="213.36" y="99.06" rot="R270"/>
@@ -11375,8 +11408,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="P+16" gate="1" x="373.38" y="-38.1" rot="MR0"/>
 <instance part="GND24" gate="1" x="373.38" y="-55.88"/>
 <instance part="SJ17" gate="G$1" x="248.92" y="-38.1" smashed="yes">
-<attribute name="NAME" x="246.38" y="-46.99" size="1.778" layer="95"/>
-<attribute name="VALUE" x="246.38" y="-43.18" size="1.778" layer="96"/>
+<attribute name="NAME" x="246.38" y="-44.45" size="1.778" layer="95"/>
+<attribute name="VALUE" x="246.38" y="-43.18" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -11453,7 +11486,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="172.72" y1="88.9" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="91.44" x2="172.72" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="91.44" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
 <junction x="172.72" y="91.44"/>
 </segment>
 <segment>
@@ -11634,8 +11667,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="172.72" y1="114.3" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="172.72" y1="132.08" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="129.54" x2="165.1" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="129.54" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
 <junction x="172.72" y="132.08"/>
 </segment>
 <segment>
@@ -11872,11 +11905,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="N$16" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="101.6" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="N1" gate="A" pin="+IN"/>
+<wire x1="162.56" y1="101.6" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="109.22" x2="165.1" y2="119.38" width="0.1524" layer="91"/>
-<junction x="165.1" y="109.22"/>
+<wire x1="162.56" y1="109.22" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="N1" gate="A" pin="+IN"/>
+<wire x1="165.1" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
+<junction x="162.56" y="109.22"/>
 </segment>
 </net>
 <net name="AVCC" class="0">
@@ -12273,4 +12307,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
