@@ -196,18 +196,12 @@
 <description>WR-COM SMT Horizontal 5 Contacts Micro USB Type B, 5 pins</description>
 <wire x1="-4" y1="0.375" x2="4" y2="0.375" width="0.127" layer="51"/>
 <wire x1="4" y1="0.375" x2="4" y2="-4.125" width="0.127" layer="51"/>
-<wire x1="4" y1="-4.125" x2="4" y2="-5.425" width="0.127" layer="51"/>
-<wire x1="4" y1="-5.425" x2="-4" y2="-5.425" width="0.127" layer="51"/>
-<wire x1="-4" y1="-5.425" x2="-4" y2="-4.125" width="0.127" layer="51"/>
 <wire x1="-4" y1="-4.125" x2="-4" y2="0.375" width="0.127" layer="51"/>
 <wire x1="-4" y1="-4.125" x2="4" y2="-4.125" width="0.127" layer="51"/>
 <wire x1="-5.1" y1="0.9" x2="5.1" y2="0.9" width="0.127" layer="21"/>
 <wire x1="5.1" y1="0.9" x2="5.1" y2="-4.125" width="0.127" layer="21"/>
 <wire x1="-5.1" y1="-4.125" x2="5.1" y2="-4.125" width="0.127" layer="21"/>
-<wire x1="5.1" y1="-5.425" x2="-5.1" y2="-5.425" width="0.127" layer="21"/>
-<wire x1="5.1" y1="-4.125" x2="5.1" y2="-5.425" width="0.127" layer="21"/>
 <wire x1="-5.1" y1="-4.125" x2="-5.1" y2="0.9" width="0.127" layer="21"/>
-<wire x1="-5.1" y1="-5.425" x2="-5.1" y2="-4.125" width="0.127" layer="21"/>
 <smd name="3" x="0" y="0" dx="0.4" dy="1.35" layer="1"/>
 <smd name="4" x="0.65" y="0" dx="0.4" dy="1.35" layer="1"/>
 <smd name="2" x="-0.65" y="0" dx="0.4" dy="1.35" layer="1"/>
@@ -433,7 +427,7 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <wire x1="-10.412" y1="-3.556" x2="-9.904" y2="-3.556" width="0.1524" layer="21"/>
 <text x="-9.14" y="4.98" size="1.778" layer="25" ratio="10">&gt;NAME</text>
 <hole x="0" y="0" drill="3.2"/>
-<hole x="-7.62" y="2.54" drill="1.5"/>
+<hole x="-7.62" y="2.54" drill="1.6"/>
 <hole x="-7.62" y="-2.54" drill="1.6"/>
 <pad name="1" x="-5.08" y="1.27" drill="1" shape="square"/>
 <pad name="2" x="-5.08" y="-1.27" drill="1"/>
@@ -1741,14 +1735,14 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <text x="-4.1656" y="-22.0472" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
 </symbol>
 <symbol name="SJ">
-<wire x1="2.54" y1="0" x2="1.143" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.143" y2="0" width="0.1524" layer="94"/>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<wire x1="0.254" y1="0.508" x2="0.254" y2="-0.508" width="1.016" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.254" y1="-0.508" x2="-0.254" y2="0.508" width="1.016" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.404" y1="-0.508" x2="-0.404" y2="0.508" width="1.016" layer="94" curve="-180" cap="flat"/>
+<wire x1="0.404" y1="0.498" x2="0.404" y2="-0.518" width="1.016" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.6" y1="0" x2="0.8" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="RX">
 <wire x1="1.27" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
